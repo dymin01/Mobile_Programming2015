@@ -1,6 +1,6 @@
 package kr.ac.kookmin.shape;
 
-public class Shape {
+public abstract class Shape {
 	
 	protected Point center;
 	
@@ -8,16 +8,13 @@ public class Shape {
 		this.center = center;
 	}
 
-	public Rectangle getBounds() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public abstract Rectangle getBounds();
 
 	public Point getCenter() {
 		// TODO Auto-generated method stub
 		return center;
 	}
 
-	public void draw(Graphics g) {}
+	public abstract void draw(Graphics g);
 	
 }
