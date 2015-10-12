@@ -22,9 +22,9 @@ public class AddLineNumber {
 			
 			
 			
-			for(int i = 0; i < 6; i++){
+			for(int i = 1; i <= 6; i++){
 				String str = inputStream.readLine();
-				str = (i+1) + str + '\n';
+				str = (i) + str + '\n';
 
 				outputStream.write(str);
 			}
